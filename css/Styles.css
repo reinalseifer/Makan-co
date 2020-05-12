@@ -127,7 +127,7 @@ h2 {
   background-color: #ffbcbc;
 }
 
-.container-fluid {
+#carousels .container-fluid {
   padding: 5% 15%;
   text-align: center;
 }
