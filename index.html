@@ -27,6 +27,7 @@
 
   <section class="header" id="title">
 
+
     <!-- Nav Bar -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -34,7 +35,7 @@
       <a class="navbar-brand" href="index.html"><img class="title-image" src="images/Logo2.png" alt="Makan&Co"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -43,19 +44,40 @@
           <li class="nav-item">
             <a class="nav-link" href="">Login</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Location</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Location
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Jakarta</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Bali</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Indonesia</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Product</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Snack</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Appetizer</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Main Course</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Dessert/Cakes</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Download</a>
           </li>
-          <input id="search" class="box" type="text" placeholder="Search">
-          <button class="searchSubmit btn-outline-dark btn-lg" type="submit" name="search">Go!</button>
         </ul>
-
+        <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
+  </form>
       </div>
     </nav>
 
@@ -84,74 +106,89 @@
 
   </section>
 
-    <div class="Products">
-      <h2>Our Products</h2>
-      <div class="Products-row1">
-        <table cellspace="50">
-          <tr>
-            <td>
-              <img class="pic1" src="images/Vega.jpeg" alt="Vega">
-            </td>
-            <td>
-              <a href="https://www.instagram.com/ve.cookies/">
-                <h3>Ve.Cookies</h3>
-              </a>
-              <p>One of the best home-made Cookies in town, located in the island of god "Bali".</p>
-              <p>Besides you will get a home-made tasty Cookies the packaging also will be nicely wrapped!</p>
-              <p>Location: Denpasar-Bali</p>
-              <p>Order by: <a href="https://www.instagram.com/ve.cookies/">Instagram</a></p>
-            </td>
-          </tr>
-        </table>
-      </div>
-        <hr>
-        <div class="Products-row2">
-        <table cellspace="50">
-          <tr>
-            <td>
-                <img class="pic2" src="images/Dinda.jpeg" alt="Hungry.Ind">
-            </td>
-            <td>
-              <a href="https://www.instagram.com/hungry.ind/">
-                <h3>Hungry.Ind</h3>
-              </a>
-              <p>While you craving for something sweet they gave you a lot, here they are home-made Brownies like you never see before.</p>
-              <p>With the fresh ingredients and just made by the order they spent their time to make sure the quality is the best.</p>
-              <p>Location: Jakarta</p>
-              <p>Order by:
-                Whatsapp: 082133210900 or <a href="https://shopee.co.id/adindagaluh26">Shoppe</a> </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-        <hr>
-        <div class="Products-row3">
-        <table cellspace="50">
-          <tr>
-            <td>
-                <img class="pic3" src="images/Nanu.jpeg" alt="Klasiknastar">
-            </td>
-            <td>
-              <a href="https://www.instagram.com/klasiknastar/">
-                <h3>Klasiknastar</h3>
-              </a>
-              <p>Who are didn't know about this classic and iconic sweet.</p>
-              <p>This one of the best pineapple tart will melted in your mouth while you have quality time with your family on the special event.</p>
-              <p>Don't worry they will make sure use the premium ingredients as their secret recipe!</p>
-              <p>Location: Indonesia</p>
-              <p>Order by: Whatsapp: 081514744637</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
+  <!-- Sign Up -->
+
+  <section id="signup">
     <hr>
-    <div class="Products-row4">
-      <table>
+    <form action="/" class="form-signin" method="POST">
+      <img src="images/Logo.jpeg" alt="">
+  <h1 class="h3 mb-3 font-weight-normal">We want to know you better, why you not subcribe to our newsletter</h1>
+
+  <input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus>
+  <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
+  <input type="email" name="email" class="form-control bottom" placeholder="Email" required>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+  </section>
+
+  <!-- <div class="Products">
+    <h2>Our Products</h2>
+    <div class="Products-row1">
+      <table cellspace="50">
         <tr>
           <td>
-            <img class="pic4" src="images/Intan.jpeg" alt="fatbelly.dimsum"></td>
-            <td>
+            <img class="pic1" src="images/Vega.jpeg" alt="Vega">
+          </td>
+          <td>
+            <a href="https://www.instagram.com/ve.cookies/">
+              <h3>Ve.Cookies</h3>
+            </a>
+            <p>One of the best home-made Cookies in town, located in the island of god "Bali".</p>
+            <p>Besides you will get a home-made tasty Cookies the packaging also will be nicely wrapped!</p>
+            <p>Location: Denpasar-Bali</p>
+            <p>Order by: <a href="https://www.instagram.com/ve.cookies/">Instagram</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <hr>
+    <div class="Products-row2">
+      <table cellspace="50">
+        <tr>
+          <td>
+            <img class="pic2" src="images/Dinda.jpeg" alt="Hungry.Ind">
+          </td>
+          <td>
+            <a href="https://www.instagram.com/hungry.ind/">
+              <h3>Hungry.Ind</h3>
+            </a>
+            <p>While you craving for something sweet they gave you a lot, here they are home-made Brownies like you never see before.</p>
+            <p>With the fresh ingredients and just made by the order they spent their time to make sure the quality is the best.</p>
+            <p>Location: Jakarta</p>
+            <p>Order by:
+              Whatsapp: 082133210900 or <a href="https://shopee.co.id/adindagaluh26">Shoppe</a> </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <hr>
+    <div class="Products-row3">
+      <table cellspace="50">
+        <tr>
+          <td>
+            <img class="pic3" src="images/Nanu.jpeg" alt="Klasiknastar">
+          </td>
+          <td>
+            <a href="https://www.instagram.com/klasiknastar/">
+              <h3>Klasiknastar</h3>
+            </a>
+            <p>Who are didn't know about this classic and iconic sweet.</p>
+            <p>This one of the best pineapple tart will melted in your mouth while you have quality time with your family on the special event.</p>
+            <p>Don't worry they will make sure use the premium ingredients as their secret recipe!</p>
+            <p>Location: Indonesia</p>
+            <p>Order by: Whatsapp: 081514744637</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <div class="Products-row4">
+    <table>
+      <tr>
+        <td>
+          <img class="pic4" src="images/Intan.jpeg" alt="fatbelly.dimsum"></td>
+        <td>
           <a href="https://www.instagram.com/fatbelly.dimsum/">
             <h3>fatbelly.dimsum</h3>
           </a>
@@ -159,17 +196,18 @@
           <p>Yes, Dim sum! the enjoyable yet satisfying this little creature food will makes everything looks fine.</p>
           <p>They offer you a lot of happiness in the single bite</p>
           <p>Location: Depok</p>
-          <p>Order by: <a href="https://www.instagram.com/fatbelly.dimsum/">Instagram</a></p></td>
-        </tr>
-      </table>
+          <p>Order by: <a href="https://www.instagram.com/fatbelly.dimsum/">Instagram</a></p>
+        </td>
+      </tr>
+    </table>
   </div>
 </div> -->
-<hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you like your product to be on the list</h3>
-      <a class="btn" href="mailto:reinaldisaputra@yahoo.co.id">CONTACT ME</a>
-    </div>
+  <hr>
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>If you like your product to be on the list</h3>
+    <a class="btn" href="mailto:reinaldisaputra@yahoo.co.id">CONTACT ME</a>
+  </div>
   </div>
 
 
@@ -180,8 +218,8 @@
     <p>© 2020 Reinaldi Saputra.</p>
   </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
