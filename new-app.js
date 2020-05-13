@@ -12,7 +12,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/signup.html");
 });
 
 app.post("/", function(req, res){
@@ -63,3 +63,9 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
   console.log("Server is running on port 3000")
 });
+
+// API key//
+// 5b842ed7fac7408b5366e9b66711b8fa-us18
+
+// id
+// 9e7653484a
