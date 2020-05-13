@@ -12,7 +12,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
-  res.sendFile(__dirname + "/signup.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/", function(req, res){
@@ -34,11 +34,11 @@ app.post("/", function(req, res){
   };
   const jsonDATA = JSON.stringify(data);
 
-  const url = "https://us18.api.mailchimp.com/3.0/lists/9e7653484a";
+  // const url = "https://us18.api.mailchimp.com/3.0/lists/9e7653484a";
 
   const options = {
     method: "POST" ,
-    auth: "Reinaldi:5b842ed7fac7408b5366e9b66711b8fa-us18"
+    // auth: "Reinaldi:5b842ed7fac7408b5366e9b66711b8fa-us18"
   }
 
   const request = https.request(url, options, function(response) {
